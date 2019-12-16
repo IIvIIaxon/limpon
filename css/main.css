@@ -1,0 +1,70 @@
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #7581a1;
+  line-height: 26px;
+}
+h1 {
+  font-size: 80px;
+  font-weight: 600;
+  color: #192b59;
+}
+a {
+  text-decoration: none;
+}
+
+.nav {
+  font-size: 12px;
+  font-weight: 700;
+  color: #6e7ea9;
+  text-transform: uppercase;
+  list-style: none;
+}
+.btn-primary {
+  background-color: #1085e4 ;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  border: none;
+  padding: 20px 40px;
+  border-radius: 30px;
+}
+.btn-secondary {
+  background-color: #cbdbe8;
+  color: #7e8bae;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  border: none;
+  padding: 20px 40px;
+  border-radius: 30px;
+}
+.btn-free {
+  font-weight: 400;
+}
+.grid h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #192b59;
+}
+.grid h2 span {
+  display: block;
+  font-size: 14px;
+  font-weight: 800;
+  color: #1085e4;
+}
+.grid-item h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #192b59;
+}
+.grid-item a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1085e4;
+}
