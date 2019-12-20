@@ -1,151 +1,61 @@
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: #7581a1;
-  line-height: 26px;
-}
-
-.wrapper {
-  max-width: 1110px;
-  margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #7581a1;
+    line-height: 26px;
 }
 
 h1 {
-  font-size: 80px;
-  font-weight: 600;
-  line-height: 1.1;
-  letter-spacing: -2.5px;
-  color: #192b59;
-  max-width: 540px;
-  margin-bottom: 67px;
-}
-
-a {
-  text-decoration: none;
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -2.5px;
+    color: #192b59;
+    max-width: 540px;
 }
 
 .nav {
-  font-size: 12px;
-  font-weight: 700;
-  color: #6e7ea9;
-  text-transform: uppercase;
-  list-style: none;
+    font-size: 12px;
+    font-weight: 700;
+    color: #6e7ea9;
+    text-transform: uppercase;
+    list-style: none;
 
-  display: flex;
-}
-
-.nav>li {
-  padding: 0 15px;
-}
-
-.nav-item {
-  color: #6e7ea9;
-}
-
-.btn-primary {
-  background-color: #1085e4;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 2.5px;
-  border: none;
-  padding: 21px 40px;
-  border-radius: 30px;
-}
-
-.btn-primary:hover {
-  color: #fff;
-  background-color: #1057da;
-}
-
-.btn-secondary {
-  background-color: #cbdbe8;
-  color: #7e8bae;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 2.5px;
-  border: none;
-  padding: 21px 40px;
-  border-radius: 30px;
-}
-
-.btn-secondary:hover {
-  background-color: #a2acb4;
-}
-
-.btn-third {
-  color: #8085b1;
-  background-color: transparent;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 2.5px;
-  border: none;
-  padding: 20px 39px;
-  border-radius: 30px;
-  border: 1px solid #dce1e5;
+    display: flex;
 }
 
 .btn-free {
-  font-size: 11px;
-  font-weight: 400;
-  letter-spacing: 1.9px;
-  padding: 22px 57px;
-}
-
-.btn-group a+a {
-  margin-left: 15px;
+    color: #fff;
+    background-color: dodgerblue;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 1.9px;
+    padding: 22px 57px;
+    text-decoration: none;
 }
 
 .grid h2 {
-  font-size: 40px;
-  font-weight: 700;
-  color: #192b59;
+    color: #192b59;
+    font-size: 40px;
+    font-weight: 700;
 }
 
 .grid h2 span {
-  display: block;
-  font-size: 14px;
-  font-weight: 800;
-  color: #1085e4;
+    display: block;
+    color: #1085e4;
+    font-size: 14px;
 }
 
 .grid-item h3 {
-  font-size: 20px;
-  font-weight: 600;
-  color: #192b59;
+    color: #192b59;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .grid-item a {
-  font-size: 14px;
-  font-weight: 600;
-  color: #1085e4;
-}
-
-.list-stats {
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-}
-
-.list-stats>li {
-  color: #1085e4;
-  font-size: 12px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-}
-
-.list-stats>li>span {
-  display: block;
-  color: #bacbdc;
-  font-size: 60px;
-  font-weight: 700;
-  letter-spacing: 0;
-  margin-bottom: 22px;
+    color: #1085e4;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
 }
