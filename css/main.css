@@ -11,14 +11,6 @@ body {
   margin: 0 auto;
 }
 
-.box-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 305px;
-  padding-top: 40px;
-}
-
 h1 {
   font-size: 80px;
   font-weight: 600;
@@ -47,35 +39,76 @@ h1 {
   margin-bottom: 11px;
 }
 
-.page-stat .title-h2 {
-  max-width: 475px;
-  text-align: center;
-  margin: 0 auto;
+.btn-primary {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #1085e4;
+  border: 1px solid #1085e4;
+  padding: 20px 42px;
+  border-radius: 30px;
 }
 
-.page-screen .title-h2 {
-  max-width: 540px;
-  font-size: 40px;
-  letter-spacing: -1.2px;
-  text-align: center;
-  margin: 0 auto;
+.btn-primary:focus {
+  outline: 1px dotted #6e7ea9;
 }
 
-.page-screen .title-h2 span {
-  letter-spacing: 4.8px;
-  margin-bottom: 19px;
+.btn-primary:hover {
+  color: #1085e4;
+  background-color: #fff;
 }
 
-.page-plan .title-h2 {
-  font-size: 40px;
-  letter-spacing: -1.2px;
-  text-align: center;
-  margin: 0 auto;
+.btn-secondary {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #7e8bae;
+  background-color: #cbdbe8;
+  border: 1px solid #cbdbe8;
+  padding: 20px 42px;
+  border-radius: 30px;
 }
 
-.page-plan .title-h2 span {
-  letter-spacing: 4.8px;
-  margin-bottom: 19px;
+.btn-secondary:hover {
+  color: #cbdbe8;
+  background-color: #7e8bae;
+  border: 1px solid #7e8bae;
+}
+
+.btn-secondary:focus {
+  outline: 1px dotted #6e7ea9;
+}
+
+.btn-info {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #8085b1;
+  background-color: transparent;
+  border: 1px solid #dce1e5;
+  padding: 20px 42px;
+  border-radius: 30px;
+}
+
+.btn-info:focus {
+  outline: 1px dotted #6e7ea9;
+}
+
+/* page-header */
+
+.box-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 305px;
+  padding-top: 40px;
 }
 
 .logo {
@@ -106,54 +139,9 @@ h1 {
   color: #6e7ea9;
 }
 
-.btn-primary {
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 2.5px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: #1085e4;
-  border: 1px solid #1085e4;
-  padding: 20px 42px;
-  border-radius: 30px;
-}
-
-.btn-primary:hover {
-  color: #1085e4;
-  background-color: #fff;
-}
-
-.btn-secondary {
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 2.5px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #7e8bae;
-  background-color: #cbdbe8;
-  border: 1px solid #cbdbe8;
-  padding: 20px 42px;
-  border-radius: 30px;
-}
-
-.btn-secondary:hover {
-  color: #cbdbe8;
-  background-color: #7e8bae;
-  border: 1px solid #7e8bae;
-}
-
-.btn-info {
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 2.5px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #8085b1;
-  background-color: transparent;
-  border: 1px solid #dce1e5;
-  padding: 20px 42px;
-  border-radius: 30px;
+.nav-item:hover {
+  color: #4d6094;
+  text-shadow: 5px 2px 5px #8591b1;
 }
 
 .nav .btn-free {
@@ -167,6 +155,10 @@ h1 {
   color: #1085e4;
 }
 
+.btn-group a+a {
+  margin-left: 14px;
+}
+
 .screen-img {
   display: block;
   position: absolute;
@@ -177,9 +169,7 @@ h1 {
   height: 736px;
 }
 
-.btn-group a+a {
-  margin-left: 14px;
-}
+/* page-company */
 
 .list-company {
   display: flex;
@@ -223,6 +213,51 @@ h1 {
   height: 69px;
 }
 
+/* page-grid */
+
+.grid {
+  max-width: 1110px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas: "a c d"
+                      "b c d "
+                      "b f g"
+                      "e f g"
+                      "e h h";
+}
+
+.grid-title {
+  grid-area: a;
+}
+
+.grid-item-1 {
+  grid-area: b;
+}
+
+.grid-item-2 {
+  grid-area: c;
+}
+
+.grid-item-3 {
+  grid-area: d;
+}
+
+.grid-item-4 {
+  grid-area: e;
+}
+
+.grid-item-5 {
+  grid-area: f;
+}
+
+.grid-item-6 {
+  grid-area: g;
+}
+
+.grid-text {
+  grid-area: h;
+}
+
 .grid h2 {
   color: #192b59;
   font-size: 40px;
@@ -235,10 +270,16 @@ h1 {
   font-size: 14px;
 }
 
+.grid-item {
+  text-align: center;
+  box-shadow: 0px 0px 5px #f3f3f3;
+}
+
 .grid-item h3 {
   color: #192b59;
   font-size: 20px;
   font-weight: 600;
+  margin-bottom: 18px;
 }
 
 .grid-item a {
@@ -248,12 +289,57 @@ h1 {
   text-decoration: none;
 }
 
+.grid-icon {
+  display: block;
+  background-repeat: no-repeat;
+  margin: 0 auto 36px;
+} 
+
+.grid-icon-1 {
+  background-image: url(../images/icon-1.png);
+  width: 79px;
+  height: 82px;
+}
+
+.grid-icon-2 {
+  background-image: url(../images/icon-2.png);
+  width: 73px;
+  height: 79px;
+}
+
+.grid-icon-3 {
+  background-image: url(../images/icon-3.png);
+  width: 89px;
+  height: 85px;
+}
+
+.grid-icon-4 {
+  background-image: url(../images/icon-4.png);
+  width: 102px;
+  height: 92px;
+}
+
+.grid-icon-5 {
+  background-image: url(../images/icon-5.png);
+  width: 85px;
+  height: 90px;
+}
+
+.grid-icon-6 {
+  background-image: url(../images/icon-6.png);
+  width: 100px;
+  height: 87px;
+}
+
+/* page-subscribe */
+
 .page-subscribe .box-subscribe {
   display: flex;
   justify-content: space-between;
 }
 
 .page-subscribe .text {
+  margin-top: 25px;
   flex-basis: 542px;
 }
 
@@ -284,11 +370,12 @@ h1 {
 }
 
 .box-subscribe-user input {
+  color: #fff;
   font-size: 14px;
   border: 2px solid #3d56ad;
   border-radius: 30px;
   background-color: transparent;
-  padding: 23px 41px;
+  padding: 23px 250px 23px 41px;
   display: block;
   box-sizing: border-box;
   width: 100%;
@@ -322,6 +409,17 @@ h1 {
   letter-spacing: 3px;
 }
 
+/* page-software */
+
+
+
+/* page-stat */
+
+.page-stat .title-h2 {
+  max-width: 475px;
+  text-align: center;
+  margin: 0 auto;
+}
 .list-stat {
   display: flex;
   justify-content: space-around;
@@ -347,8 +445,62 @@ h1 {
   margin-bottom: 23px;
 }
 
+/* page-app */
+
+
+
+/* page-analitics */
+
+
+
+/* learn-more */
+
+
+
+/* page-screen */
+
+.page-screen .title-h2 {
+  max-width: 540px;
+  font-size: 40px;
+  letter-spacing: -1.2px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.page-screen .title-h2 span {
+  letter-spacing: 4.8px;
+  margin-bottom: 19px;
+}
+
+/* page-clients */
+
+
+
+/* page-plan */
+
+.page-plan .title-h2 {
+  font-size: 40px;
+  letter-spacing: -1.2px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.page-plan .title-h2 span {
+  letter-spacing: 4.8px;
+  margin-bottom: 19px;
+}
+
 .page-plan .title-h2 {
   margin-bottom: 83px;
+}
+
+.page-plan .btn-primary:hover {
+  background-color: transparent;
+}
+
+.page-plan .btn-info:hover {
+  color: #f5faff;
+  background-color: #8085b1;
 }
 
 .box-price {
@@ -422,7 +574,7 @@ h1 {
   padding: 20px 61px;
 }
 
-/* page */
+/* page backgrounds */
 
 .page-header {
   position: relative;
@@ -454,7 +606,7 @@ h1 {
 }
 
 .page-subscribe {
-  padding: 77px 0px 27px;
+  padding: 50px 0px 54px;
   background: rgba(10, 32, 144, 1);
   background: -moz-linear-gradient(-45deg, rgba(10, 32, 144, 1) 0%, rgba(35, 120, 205, 1) 100%);
   background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(10, 32, 144, 1)), color-stop(100%, rgba(35, 120, 205, 1)));
