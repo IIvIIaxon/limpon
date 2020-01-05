@@ -166,7 +166,7 @@ h1 {
 .screen-img {
   display: block;
   position: absolute;
-  right: 0px;
+  right: -200px;
   top: 175px;
   background-image: url(../images/bg.png);
   width: 891px;
@@ -514,7 +514,7 @@ h1 {
 }
 
 .page-software-list::-webkit-scrollbar {
-  width: 4 px;
+  width: 4px;
   height: 3px;
 }
 
@@ -541,8 +541,8 @@ h1 {
 .page-software .screen-img {
   display: block;
   position: absolute;
-  left: -23px;
-  top: 77px;
+  left: -159px;
+  top: 116px;
   background-image: url(../images/notebook-img.png);
   width: 931px;
   height: 760px;
@@ -582,6 +582,16 @@ h1 {
 }
 
 /* page-app */
+.page-app {
+  position: relative;
+  padding: 69px 0px 108px;
+}
+
+.page-app .video-app {
+  position: absolute;
+  top: 51px;
+  right: 118px;
+}
 
 .page-app-flex {
   display: flex;
@@ -614,9 +624,54 @@ h1 {
   display: flex;
 }
 
+.page-app-list>li>a {
+  display: block;
+  background-image: url(../images/googlplay.png);
+  background-position: -13px 0;
+  width: 189px;
+  height: 81px;
+}
+
+.page-app-list>li:last-child>a {
+  display: block;
+  background-image: url(../images/appstore.png);
+  width: 168px;
+  height: 81px;
+}
+
 /* page-analitics */
 
+.page-analitics {
+  padding: 119px 0px 0px 0px;
+}
 
+.page-analitics .title-h2 {
+  margin-top: 10px;
+  margin-bottom: 26px;
+} 
+
+.page-analitics-text {
+  margin-bottom: 26px;
+}
+
+.page-analitics-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-analitics-flex>div {
+  flex-basis: 51%;
+}
+
+.page-analitics-icon {
+  display: block;
+  background-image: url(../images/icon.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 115px;
+  height: 97px;
+}
 
 /* learn-more */
 
@@ -742,6 +797,7 @@ h1 {
 /* page backgrounds */
 
 .page-header {
+  overflow: hidden;
   position: relative;
   background-image: url(../images/first-screen-bg.png);
   background-repeat: no-repeat;
@@ -750,7 +806,7 @@ h1 {
 
 .page-company {
   background-image: url(../images/logos-bg.png);
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   padding: 106px 0px 99px;
 }
 
@@ -783,8 +839,17 @@ h1 {
 }
 
 .page-software {
+  height: 1002px;
   padding-top: 113px;
   background-image: url(../images/bg5.png);
+  background-position-x: -160px;
   background-repeat: no-repeat;
 
+}
+
+.page-analitics {
+  height: 690px;
+  box-sizing: border-box;
+  background-image: url(../images/bg8.png);
+  background-size: cover;
 }
