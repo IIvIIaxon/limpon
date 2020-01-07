@@ -651,7 +651,7 @@ h1 {
 } 
 
 .page-analitics-text {
-  margin-bottom: 26px;
+  margin-bottom: 50px;
 }
 
 .page-analitics-flex {
@@ -660,12 +660,21 @@ h1 {
   align-items: center;
 }
 
+.page-analitics-flex>img {
+  padding: 18px 0px 0px 7px;
+}
+
 .page-analitics-flex>div {
-  flex-basis: 51%;
+  flex-basis: 54%;
+  position: relative;
+  padding-top: 95px;
 }
 
 .page-analitics-icon {
   display: block;
+  position: absolute;
+  top: 0px;
+  left: -23px;
   background-image: url(../images/icon.png);
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -839,6 +848,7 @@ h1 {
 }
 
 .page-software {
+  box-sizing: border-box;
   height: 1002px;
   padding-top: 113px;
   background-image: url(../images/bg5.png);
