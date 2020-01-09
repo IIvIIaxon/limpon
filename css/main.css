@@ -811,6 +811,10 @@ h1 {
 
 /* page-plan */
 
+.page-plan {
+  padding-top: 116px;
+}
+
 .page-plan .title-h2 {
   font-size: 40px;
   letter-spacing: -1.2px;
@@ -842,12 +846,24 @@ h1 {
 }
 
 .box-price--item {
+  position: relative;
   flex-basis: 350px;
   padding-top: 20px;
   padding-bottom: 97px;
   background-color: #f5faff;
   text-align: center;
 }
+
+.box-price--item::after {
+  content: "1";
+  width: 61px;
+  height: 632px;
+  position: absolute; 
+  background-image: url(../images/untitled.svg);
+  top: 0px;
+  right: 0px;
+}
+
 
 .box-price--item.active {
   background-color: #192b59;
@@ -888,6 +904,10 @@ h1 {
   text-align: center;
   letter-spacing: 1.5px;
   color: #0084ff;
+}
+
+.box-price--item.active strong {
+  color: #fff;
 }
 
 .box-price--item ul {
