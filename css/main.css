@@ -854,12 +854,13 @@ h1 {
   text-align: center;
 }
 
-.box-price--item::after {
-  content: "1";
-  width: 61px;
-  height: 632px;
+.box-price--item.triangle::after {
+  content: "";
+  width: 106px;
+  height: 100%;
   position: absolute; 
   background-image: url(../images/untitled.svg);
+  background-position: center;
   top: 0px;
   right: 0px;
 }
