@@ -451,6 +451,10 @@ h1 {
   letter-spacing: 3px;
 }
 
+.box-subscribe-user button:hover {
+  border: 1px solid #fff;
+}
+
 /* page-software */
 
 .page-software {
