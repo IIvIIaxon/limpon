@@ -586,6 +586,27 @@ h1 {
   margin-bottom: 23px;
 }
 
+.object-circle {
+  position: absolute;
+  left: -250px;
+  bottom: -246px;
+  background-image: url(../images/circle.svg);
+  background-repeat: no-repeat;
+  width: 495px;
+  height: 763px;
+}
+
+.object-square {
+  position: absolute;
+  right: -254px;
+  top: -275px;
+  background-image: url(../images/square.svg);
+  background-repeat: no-repeat;
+  width: 615px;
+  height: 788px;
+}
+
+
 /* page-app */
 .page-app {
   position: relative;
@@ -642,6 +663,17 @@ h1 {
   background-image: url(../images/appstore.png);
   width: 168px;
   height: 81px;
+}
+
+.object-intro {
+  z-index: -1;
+  position: absolute;
+  right: 526px;
+  top: 51px;
+  background-image: url(../images/intro.svg);
+  background-repeat: no-repeat;
+  width: 704px;
+  height: 218px;
 }
 
 /* page-analitics */
@@ -813,6 +845,7 @@ h1 {
 
 .page-plan {
   padding-top: 116px;
+  padding-bottom: 120px;
 }
 
 .page-plan .title-h2 {
@@ -928,6 +961,166 @@ h1 {
   padding: 20px 61px;
 }
 
+/* page team */
+
+.page-team {
+  text-align: center;
+  padding: 82px 0px 20px 0px;
+}
+
+.page-team .title-h2 {
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 140px;
+}
+
+.page-team .title-h2 span {
+  color: #85c8ff;
+  font-size: 18px;
+  letter-spacing: 3.5px;
+  margin-bottom: 18px;
+}
+
+.box-team {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-team-item {
+  position: relative;
+  background-color: #fff;
+  flex-basis: 31.5%;
+  box-shadow: 0px 6px 5px #edeaea;
+  padding: 192px 0px 40px 0px;
+}
+
+.box-team-item .avatar {
+  position: absolute;
+  top: -86px;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+}
+
+.box-team-item .position {
+  text-transform: uppercase;
+  color: #1a88e1;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.box-team-item .name {
+  color: #192b59;
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 0px;
+}
+
+.box-team-item .btn-team {
+  padding: 0;
+  background-color: #f3f3f3;
+  border-radius: 50%;
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  border: none;
+  transition: 0.3s;
+}
+
+.box-team-item .btn-team:hover, 
+.box-team-item .btn-team:active, 
+.box-team-item .btn-team:focus {
+  background-color: #1a88e1;
+}
+
+.box-team-item .btn-more span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/btn-team.png);
+  background-repeat: no-repeat;
+  background-position: -8px -10px;
+  margin: 0 auto;
+}
+
+.social-team .btn-team span {
+  align-self: center;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/btn-team.png);
+  background-repeat: no-repeat;
+  background-position: -8px -10px;
+  margin: 0 auto;
+}
+
+.box-team-item .btn-more:hover span, 
+.box-team-item .btn-more:active span, 
+.box-team-item .btn-more:focus span{
+  background-position: -8px -38px;
+}
+
+.box-team-item .btn-more:hover {
+  cursor: pointer;
+}
+
+
+.social-team {
+  list-style: none;
+  max-width: 70%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.social-team .btn-team {
+  display: flex;
+}
+
+.social-team .btn-fb span {
+  background-position: -44px -12px;
+}
+
+.social-team .btn-fb:hover span, 
+.social-team .btn-fb:active span, 
+.social-team .btn-fb:focus span {
+  background-position: -44px -40px;
+}
+
+.social-team .btn-tw span {
+  background-position: -75px -12px;
+}
+
+.social-team .btn-tw:hover span, 
+.social-team .btn-tw:active span, 
+.social-team .btn-tw:focus span {
+  background-position: -75px -38px;
+}
+
+.social-team .btn-be span {
+  background-position: -111px -12px;
+}
+
+.social-team .btn-be:hover span, 
+.social-team .btn-be:active span, 
+.social-team .btn-be:focus span {
+  background-position: -111px -38px;
+}
+
+.social-team .btn-web span {
+  background-position: -145px -13px;
+}
+
+.social-team .btn-web:hover span, 
+.social-team .btn-web:active span, 
+.social-team .btn-web:focus span {
+  background-position: -145px -39px;
+}
+
 /* page backgrounds */
 
 .page-header {
@@ -946,6 +1139,7 @@ h1 {
 }
 
 .page-stat {
+  position: relative;
   background-color: #edf6ff;
   padding: 113px 0;
 }
@@ -1018,4 +1212,10 @@ h1 {
   width: 100%;
   height: 100%;
   z-index: -1;
+}
+
+.page-team {
+  background-image: url(../images/bg11.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
