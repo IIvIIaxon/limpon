@@ -736,6 +736,10 @@ h1 {
   padding-top: 63px;
 }
 
+.learn-more-flex>img {
+  align-self: baseline;
+}
+
 .learn-more .title-h2 {
   margin-bottom: 28px;
 }
@@ -969,7 +973,7 @@ h1 {
 
 .page-team {
   text-align: center;
-  padding: 82px 0px 20px 0px;
+  padding: 82px 0px 120px 0px;
 }
 
 .page-team .title-h2 {
@@ -1125,6 +1129,129 @@ h1 {
   background-position: -145px -39px;
 }
 
+/* page-form */
+
+.page-form-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-form-item {
+  flex-basis: 45%;
+  margin-top: 71px;
+}
+
+.page-form-img {
+  align-self: baseline;
+  margin-top: 218px;
+  padding-left: 89px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  font-size: 14px;
+  border: 2px solid #dce4ec;
+  padding: 26px 80px 26px 40px;
+  border-radius: 40px;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  min-height: 160px;
+  resize: none;
+}
+
+.contact-form input::-webkit-input-placeholder, .contact-form textarea::-webkit-input-placeholder {
+  color: #8995b3;
+}
+
+.contact-form input::-moz-placeholder, .contact-form textarea::-webkit-input-placeholder {
+  color: #8995b3;
+}
+
+/* Firefox 19+ */
+.contact-form input:-moz-placeholder, .contact-form textarea::-webkit-input-placeholder {
+  color: #8995b3;
+}
+
+/* Firefox 18- */
+.contact-form input:-ms-input-placeholder, .contact-form textarea::-webkit-input-placeholder {
+  color: #8995b3;
+}
+
+.contact-form-item {
+  margin-bottom: 15px;
+  position: relative;
+  width: 100%;
+}
+
+.contact-form-text::after {
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url(../images/user.png);
+  width: 13px;
+  height: 13px;
+  right: 40px;
+  top: calc(50% - 7px);
+}
+
+.contact-form-email::after {
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url(../images/envelope.png);
+  width: 14px;
+  height: 11px;
+  right: 40px;
+  top: calc(50% - 6px);
+}
+
+.contact-form-message::after {
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url(../images/pen.png);
+  width: 14px;
+  height: 15px;
+  right: 40px;
+  top: 30px;
+}
+
+.contact-form .btn-primary {
+  position: relative;
+  max-width: 232px;
+  margin-top: 32px;
+}
+
+.contact-form .btn-primary::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url(../images/paper-plane.png);
+  width: 13px;
+  height: 13px;
+  top: calc(50% - 7px);
+  left: 40px;
+}
+
+.contact-form .btn-primary:hover::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url(../images/paper-plane-blue.png);
+  width: 13px;
+  height: 13px;
+  top: calc(50% - 7px);
+  left: 40px;
+  transition: 0.3s;
+}
+
 /* page backgrounds */
 
 .page-header {
@@ -1220,6 +1347,14 @@ h1 {
 
 .page-team {
   background-image: url(../images/bg11.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.page-form {
+  height: 840px;
+  box-sizing: border-box;
+  background-image: url(../images/bg12.png);
   background-position: center;
   background-repeat: no-repeat;
 }
