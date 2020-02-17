@@ -9,6 +9,7 @@ body {
 .wrap {
   max-width: 1110px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 h1 {
@@ -177,43 +178,48 @@ h1 {
 
 .list-company {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
-  padding: 0;
+  padding: 0 20px;
   margin: 0 auto;
   max-width: 1110px;
 }
 
 .list-company-item {
+  flex-basis: 201px;
+}
+
+.list-company-item span {
   display: block;
 }
 
-.company-one {
+.company-one span {
   background-image: url(../images/token.png);
   background-repeat: no-repeat;
-  flex-basis: 200px;
+  width: 201px;
   height: 59px;
 }
 
-.company-two {
+.company-two span {
   background-image: url(../images/magneto.png);
   background-repeat: no-repeat;
-  flex-basis: 200px;
-  height: 69px;
+  width: 201px;
+  height: 90px;
 }
 
-.company-three {
+.company-three span {
   background-image: url(../images/boohoo.png);
   background-repeat: no-repeat;
-  flex-basis: 201px;
+  width: 201px;
   height: 47px;
 }
 
-.company-four {
+.company-four span {
   background-image: url(../images/fractal.png);
   background-repeat: no-repeat;
-  flex-basis: 200px;
+  width: 201px;
   height: 69px;
 }
 
@@ -226,14 +232,15 @@ h1 {
 .grid {
   max-width: 1110px;
   margin: 0 auto;
+  padding: 0 20px;
   display: grid;
   grid-template-columns: 350px 354px 350px;
   justify-content: space-between;
   grid-template-areas: "a c d"
-    "b c d "
-    "b f g"
-    "e f g"
-    "e h h";
+                        "b c d "
+                        "b f g"
+                        "e f g"
+                        "e h h";
 }
 
 .grid-title {
@@ -377,6 +384,7 @@ h1 {
 
 .page-subscribe .box-subscribe {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -604,7 +612,7 @@ h1 {
   position: absolute;
   right: -254px;
   top: -275px;
-  background-image: url(../images/square.svg);
+  background-image: url(../images/rhombus.svg);
   background-repeat: no-repeat;
   width: 615px;
   height: 788px;
@@ -761,6 +769,7 @@ h1 {
 }
 
 /* page-screen */
+
 
 .page-screen .title-h2 {
   max-width: 540px;
@@ -1259,6 +1268,14 @@ h1 {
   justify-content: space-between;
 }
 
+.footer-flex p {
+  color: #b6bae0;
+}
+
+.footer-text {
+  margin: 25px 0px;
+}
+
 .footer-text a {
   color: #1085e4;
   text-decoration: none;
@@ -1266,7 +1283,25 @@ h1 {
 }
 
 .footer .social {
+  list-style: none;
   display: flex;
+  justify-content: space-between;
+  margin: 25px 0px;
+  padding: 0px;
+}
+
+.social-item {
+  margin-left: 20px;
+}
+
+.social-link svg {
+  width: 20px;
+  fill: #fff;
+  transition: 0.3s;
+} 
+
+.social-link svg:hover {
+  fill: #3d56ad;
 }
 
 /* page backgrounds */
@@ -1301,6 +1336,8 @@ h1 {
 .page-screen img {
   margin-top: 70px;
   margin-bottom: -7px;
+  width: 100%;
+  max-width: 1288px;
 }
 
 .page-subscribe {
@@ -1378,4 +1415,73 @@ h1 {
 
 .footer {
   background-color: #192b59;
+}
+
+/* media */
+
+@media (max-width:1050px) {
+  /* page-company */
+  .page-company {
+    padding: 50px 0px 5px 0px;
+  }
+
+  .list-company-item {
+    flex-basis: 50%;
+    margin-bottom: 30px;
+  }
+
+  .list-company-item span {
+    margin: 0 auto;
+  }
+
+  /* grid */
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "a a"
+                          "b c"
+                          "d f"
+                          "g e"
+                          "h h";
+  }
+
+  .grid-title {
+    text-align: center;
+  }
+
+  /* page-subscribe */
+
+  .box-subscribe {
+    flex-direction: column-reverse;
+  }
+
+  .page-subscribe .text {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+
+  .page-subscribe .title-h2 {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .page-subscribe p {
+    margin: 0 auto 10px;
+  }
+
+  .box-subscribe-user {
+    width: 60%;
+    min-width: 604px;
+    margin: 0 auto;
+  }
+
+  .box-subscribe img {
+    max-width: 160px;
+    margin: 0 auto;
+  }
+
+}
+
+@media (max-width:640px) {
+
 }
