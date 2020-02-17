@@ -1252,6 +1252,23 @@ h1 {
   transition: 0.3s;
 }
 
+/* footer */
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-text a {
+  color: #1085e4;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer .social {
+  display: flex;
+}
+
 /* page backgrounds */
 
 .page-header {
@@ -1357,4 +1374,8 @@ h1 {
   background-image: url(../images/bg12.png);
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.footer {
+  background-color: #192b59;
 }
