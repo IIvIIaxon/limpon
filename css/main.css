@@ -1478,7 +1478,6 @@ h1 {
 
 .page-team {
   background-image: url(../images/bg11.png);
-  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -1685,6 +1684,12 @@ h1 {
     width: 350px;
   }
 
+  /* page-form */
+
+  .page-form-img {
+    width: 350px;
+  }
+
 }
 
 @media (max-width:1050px) {
@@ -1763,4 +1768,277 @@ h1 {
 
 }
 
-@media (max-width:640px) {}
+@media (max-width:1000px) {
+
+  /* page-clients */
+
+  .page-clients {
+    background-image: none;
+    background: #1085e4;
+    padding-bottom: 50px;
+  }
+
+  .page-clients .title-h2 {
+    text-align: center;
+  }
+
+  .box-clients {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .box-clients-item {
+    flex-basis: 320px;
+    margin-top: 30px;
+  }
+
+  /* page-plan */
+
+  .page-plan {
+    padding-bottom: 60px;
+  }
+
+  .page-plan .title-h2 {
+    margin-bottom: 0;
+  }
+
+  .box-price {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .box-price--item {
+    flex-basis: 320px;
+    margin-top: 40px;
+  }
+
+  /* page-team */
+
+  .box-team {
+    flex-wrap: wrap;
+  }
+
+  .box-team-item {
+    flex-basis: 303px;
+  }
+  
+}
+
+@media (max-width:948px) {
+
+  /* page-team */
+
+  .page-team {
+    padding: 60px 0px 60px 0px;
+  }
+
+  .box-team {
+    justify-content: space-around;
+  }
+
+  .box-team-item {
+    margin-top: 124px;
+  }
+
+  .page-team .title-h2 {
+    margin-bottom: 20px;
+  }
+
+}
+
+@media (max-width:840px) {
+
+  .title-h2 {
+    font-size: 40px;
+  }
+
+  .page-subscribe .title-h2 {
+    font-size: 40px;
+  }
+
+  .page-software .title-h2 {
+    font-size: 40px;
+  }
+
+  /* page-header */
+
+  h1 {
+    font-size: 60px;
+  }
+
+  .page-header {
+    padding-bottom: 120px;
+  }
+
+  .page-header .btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* page-analitics */
+
+  .page-analitics {
+    padding-top: 40px;
+  }
+
+  .page-analitics-flex {
+    justify-content: center;
+  }
+
+  .page-analitics-flex>div {
+    flex-basis: 54%;
+  }
+
+  .page-analitics-flex>img {
+    display: none;
+  }
+
+  /* learn-more */
+
+  .learn-more-flex {
+    justify-content: center;
+  }
+
+  .learn-more-flex>div {
+    flex-basis: 54%;
+  }
+
+  .learn-more-flex>img {
+    display: none;
+  }
+
+  /* page-form */
+
+  .page-form-img {
+    display: none;
+  }
+
+  .page-form-flex {
+    justify-content: center;
+  }
+
+  .page-form-item {
+    flex-basis: 80%;
+  }
+
+  .contact-form .btn-primary {
+    margin: 0 auto;
+  }
+
+  .contact-form .btn-primary::before {
+    left: 20px;
+  }
+
+  .object-circle {
+    display: none;
+  }
+
+  .object-square {
+    display: none;
+  }
+
+}
+
+@media (max-width:650px) {
+
+  .title-h1 {
+    font-size: 35px;
+  }
+
+  h2.title-h2 {
+    font-size: 25px;
+  }
+
+  .page-software .title-h2 {
+    font-size: 25px;
+  }
+
+  .box-subscribe-user {
+    width: 85%;
+    min-width: 85%;
+  }
+
+}
+
+@media (max-width:590px) {
+
+  /* grid */
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "a"
+      "b"
+      "c"
+      "d"
+      "e"
+      "f"
+      "g"
+      "h";
+  }
+
+  .box-subscribe-user button {
+    position: static;
+    display: block;
+    margin: 20px auto;
+  }
+
+  .box-subscribe-user input {
+    padding: 23px 20px 23px 20px;
+  }
+
+  /* page-app */
+
+  .page-app .video-app {
+    width: 300px;
+  }
+
+  .video-app img {
+    width: 300px;
+  }
+
+}
+
+@media (max-width:478px) {
+  
+  .btn-secondary {
+    margin-top: 20px;
+    padding: 20px 64px;
+  }
+
+  .btn-group a+a {
+    margin-left: 0px;
+  }
+
+  .learn-more {
+    padding-top: 40px;
+  }
+
+  .page-analitics .btn-primary {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    width: 205px;
+    padding: 14px 23px
+  }
+
+  .page-analitics-text {
+    margin-bottom: 20px;
+  }
+
+  .list-stat {
+    flex-direction: column;
+  }
+
+  .list-stat>li {
+    margin-top: 10px;
+  }
+
+}
+
+@media (max-width:441px) {
+  .page-company {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
